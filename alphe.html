@@ -395,7 +395,7 @@
                     </div>
                     
                     <div class="waitlist-form-container">
-                        <form class="waitlist-form" id="waitlistForm" action="https://formspree.io/f/mwprvowy" method="POST">
+                        <form class="waitlist-form" id="waitlistForm" action="https://formspree.io/f/mwprvowy" method="POST" accept-charset="UTF-8">
                             <h3>Get Early Access</h3>
                             <div class="form-group">
                                 <label for="name">Full Name</label>
@@ -405,6 +405,8 @@
                                 <label for="email">Email Address</label>
                                 <input type="email" id="email" name="email" required placeholder="Enter your email address">
                             </div>
+                            <!-- Honeypot field for spam protection -->
+                            <input type="text" name="_gotcha" style="display:none">
                             <button type="submit" class="join-waitlist-btn">
                                 <span>Join Waitlist</span>
                                 <i class="fas fa-arrow-right"></i>
